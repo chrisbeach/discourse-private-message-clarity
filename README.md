@@ -10,11 +10,13 @@ is private messaging
 
 ![Example](example.jpg)
 
+### Installation
 
-### In use at:
+1. Admin > Customize > Themes > Import > From the web
+2. Type: https://github.com/chrisbeach/discourse-private-message-clarity
+4. Select your current theme (it's indicated with a star)
+5. Under "Theme Components," select "Private Message Clarity" and click "Add"
 
-* [SE23.life](https://se23.life)
-* [SE26.life](https://se26.life)
 
 ### Recommended Text Customisation
 
@@ -22,6 +24,10 @@ Use **Admin > Customise > Text Content** to set the following:
 
 ![Recommended text customisations](text-customisations.png)
 
+### In use at:
+
+* [SE23.life](https://se23.life)
+* [SE26.life](https://se26.life)
 
 ### License
 

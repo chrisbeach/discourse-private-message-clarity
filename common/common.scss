@@ -1,5 +1,4 @@
 /* Use colour to distinguish private messaging from regular topic pages */
-
 .archetype-private_message .private-message-map h3,
 .user-menu .notifications .fa-envelope-o,
 .private-message-glyph {
@@ -22,30 +21,36 @@
 }
 #reply-control.private-message,
 .user-messages-page #reply-control,
-.archetype-private_message #reply-control {
-  background-color: #d0dfd0
+.archetype-private_message #reply-control,
+.archetype-private_message .topic-map {
+  background-color: #dfefdf
 }
 
 
 /* Add text to buttons to make it clearer that message will be private */
+.archetype-private_message {
+  .private-message-map h3:after {
+    content: " (Private)";
+  }
 
-.archetype-private_message .private-message-map h3:after {
-  content: " (Private)";
+  #reply-control button.create:after,
+  .topic-post button.create:after,
+  #topic-footer-buttons button.create:after {
+    content: " Privately";
+  }
+
+  /* Hide extraneous UI elements from private messages */
+  #suggested-topics,
+  .topic-map .map {
+    display: none;
+  }
+
+  .topic-map,
+  .topic-map .controls,
+  .topic-map .participants {
+    display: inline-block;
+  }
 }
-.archetype-private_message #reply-control button.create:after,
-.archetype-private_message .topic-post button.create:after,
-.archetype-private_message #topic-footer-buttons button.create:after {
-  content: " Privately";
-}
-
-
-/* Hide extraneous UI elements from private messages */
-
-.archetype-private_message #suggested-topics,
-.archetype-private_message .topic-map ul:first-child,
-.archetype-private_message .topic-map nav.buttons { display: none; }
-
 
 /* Enlarge message icon */
-
 .private-message-glyph { font-size: 30px; margin-right: 10px; margin-left: 10px; }
