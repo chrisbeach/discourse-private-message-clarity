@@ -39,6 +39,15 @@
     content: " Privately";
   }
 
+  .topic-post button.create {
+    white-space: nowrap;
+  }
+
+  .topic-post nav.post-controls button.reply {
+    max-width: 110px;
+    display: inline-block;
+  }
+
   /* Hide extraneous UI elements from private messages */
   #suggested-topics,
   .topic-map .map {
