@@ -1,5 +1,6 @@
 {
   "name": "Private Message Clarity",
   "about_url": "https://github.com/chrisbeach/discourse-private-message-clarity",
-  "license_url": "https://raw.githubusercontent.com/chrisbeach/discourse-private-message-clarity/master/LICENSE"
+  "license_url": "https://raw.githubusercontent.com/chrisbeach/discourse-private-message-clarity/master/LICENSE",
+  "component": true
 }
