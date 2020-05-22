@@ -1,37 +1,49 @@
 /* Use colour to distinguish private messaging from regular topic pages */
+
+.archetype-private_message .d-header {
+  background-color: mix($header-background, #70ff70, 92);
+}
+
 .archetype-private_message .private-message-map h3,
 .user-menu .notifications .fa-envelope-o,
 .private-message-glyph {
-  color: #508f50
+  color: #508f50;
 }
 
 .archetype-private_message #topic-footer-buttons button.create,
+.archetype-private_message #topic-footer-buttons button.create .d-icon,
 .archetype-private_message #reply-control .btn-primary,
+.archetype-private_message #reply-control .composer-bottom-right a.btn-default,
+.archetype-private_message #reply-control .composer-bottom-right a.btn-default svg,
 #reply-control.private-message .btn-primary,
 .new-private-message.btn-primary,
 .user-messages-page #reply-control .btn-primary,
 .usercard-controls .btn-primary,
 .btn.compose-pm {
-  color: white; background-color: #306f30;
+  color: white !important; background-color: #306f30;
 }
 
 .user-menu .notifications .fa-envelope-o,
 .user-messages-page,
-#main-outlet > .private_message #topic {
-  background-color: #f0fff0
+#main-outlet .private_message .topic-body,
+.private_message .topic-post .topic-avatar {
+  background-color: rgba(128,255,128,0.10);
 }
 #reply-control.private-message,
 .user-messages-page #reply-control,
 .archetype-private_message #reply-control,
 .archetype-private_message .topic-map {
-  background-color: #dfefdf
+  background-color: mix($secondary, #70ff70, 92) !important
 }
 
 
-/* Add text to buttons to make it clearer that message will be private */
 .archetype-private_message {
+  /* Add text to buttons to make it clearer that message will be private */
   .private-message-map h3:after {
     content: " (Private)";
+  }
+  .topic-post nav.post-controls button.reply {
+    max-width: initial !important;
   }
 
   #reply-control button.create:after,
