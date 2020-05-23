@@ -24,9 +24,7 @@
 }
 
 .user-menu .notifications .fa-envelope-o,
-.user-messages-page,
-#main-outlet .private_message .topic-body,
-.private_message .topic-post .topic-avatar {
+.user-messages-page {
   background-color: rgba(128,255,128,0.10);
 }
 #reply-control.private-message,
@@ -43,7 +41,7 @@
     content: " (Private)";
   }
   .topic-post nav.post-controls button.reply {
-    max-width: initial !important;
+    max-width: max-content !important;
   }
 
   #reply-control button.create:after,
@@ -57,7 +55,7 @@
   }
 
   .topic-post nav.post-controls button.reply {
-    max-width: 110px;
+    max-width: max-content;
     display: inline-block;
   }
 
